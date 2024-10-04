@@ -1,0 +1,25 @@
+.widget {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.widget p {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.change-color {
+  display: block;
+  border-radius: 8px;
+  background: rgb(78, 117, 255);
+  border: none;
+  padding: 8px 16px 8px 16px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  max-width: fit-content;
+  cursor: pointer;
+}
