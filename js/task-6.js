@@ -25,14 +25,15 @@ destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
   destroyBoxes();
-  for (let i = 0; i < amount; i++) {
-    const box = document.createElement("div");
-    box.style.width = `${sizes + i * 10}px`;
-    box.style.height = `${sizes + i * 10}px`;
-    box.style.backgroundColor = getRandomHexColor();
+  let boxesMarkup = "";
 
-    boxesContainer.appendChild(box);
+  for (let i = 0; i < amount; i++) {
+    boxesMarkup += `<div style="width: ${sizes + i * 10}px; 
+    height: ${sizes + i * 10}px; 
+    background-color: ${getRandomHexColor()}"></div>`;
   }
+
+  boxesContainer.insertAdjacentHTML("afterbegin", boxesMarkup);
 }
 
 function destroyBoxes() {
